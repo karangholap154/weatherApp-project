@@ -3,7 +3,7 @@ import WeatherDisplay from "./components/WeatherDisplay";
 import { FiSearch, FiMapPin } from "react-icons/fi";
 import { motion } from "framer-motion";
 
-const API_KEY = import.meta.env.VITE_WEATHER_API_KEY;
+const API_KEY = "f9307951a2ad6f98158051d2ab519426";
 
 const App = () => {
   const [city, setCity] = useState("");
