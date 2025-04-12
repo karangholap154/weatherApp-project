@@ -17,8 +17,9 @@ const App = () => {
     setLoading(true);
     try {
       const response = await fetch(
-        `http://api.weatherstack.com/current?access_key=${API_KEY}&query=${cityName}`
+        `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${API_KEY}&units=metric`
       );
+
       const data = await response.json();
 
       if (data.success === false) {
